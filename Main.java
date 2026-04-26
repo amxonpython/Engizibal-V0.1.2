@@ -15,12 +15,12 @@ public class Main {
             System.out.println("выберите команду");
             String text = scanner.nextLine();
             int index = text.indexOf(echo);
-
+            
             if (index != -1){
                 System.out.println(text);
                 skip_error = true;
             }
-            switch (text){
+            switch (text) {
                 case "calculator":
                     test_class.calculator();
                     break;
@@ -35,9 +35,10 @@ public class Main {
                     Main.save_text();
                     break;
                 default:
-                    if (skip_error == false){
+                    if (!skip_error) {
                         System.out.println("Error: такой команды не найдено");
                     }
+                skip_error = false;
             }
         }
     }
