@@ -5,6 +5,7 @@ public class data {
         System.out.println("calculator - калькулятор");
         System.out.println("saved text - блокнот/сохранить текст");
         System.out.println("exit - выход из программы");
+        System.out.println("echo - вывести введённый текст");
         System.out.println();
     }
 }
